@@ -30,7 +30,7 @@
     
     <form action="{{ url('brand/update/'.$brands->id)}}" method="POST" enctype="multipart/form-data" >
     @csrf
-    <input type="hidden" name="old_image" value="{{asset($brands->brand_image)}}">
+    <input type="hidden" name="old_image" value="{{ $brands->brand_image }}">
     <div class="form-group">
 
       <div class="mb-3">
