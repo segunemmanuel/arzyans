@@ -15,7 +15,7 @@ yarn-error.log
 /.vscode
 bootstrap/
 config/
-/app
+
 /database
 node_modules/
 storage/
