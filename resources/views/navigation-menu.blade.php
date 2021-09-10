@@ -148,7 +148,7 @@
                 </button>
             </div>
         </div>
-    </div>
+   
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">

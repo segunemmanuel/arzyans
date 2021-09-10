@@ -65,7 +65,7 @@ Route::get('/multi/image',[BrandController::class,'Multi'])->name('multi.brand')
 
 
 
-
+    
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

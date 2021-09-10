@@ -32,7 +32,7 @@
     @csrf
     <input type="hidden" name="old_image" value="{{ $brands->brand_image }}">
     <div class="form-group">
-
+ 
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Update brand name </label>
     
