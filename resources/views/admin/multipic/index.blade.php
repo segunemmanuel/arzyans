@@ -6,7 +6,13 @@
     </x-slot>
 
 
-    @if(session('success'))
+
+
+    
+    <div class="py-12">
+    <div class="container">
+    <div class="row">
+        @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">
       <strong> {{ session('success')}}</strong> 
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -14,16 +20,21 @@
       </button>
     </div>
     @endif
-
-    
-    <div class="py-12">
-    <div class="container">
-    <div class="row">
-    
     <div class="col-md-8">
     <div class="card">
-    <div class="card-header">
-    </div>
+   
+
+        <div class="card-group">
+            @foreach($images as $image)
+<div class="mt-5 col-md-4">
+<div class="card">
+<img src="{{asset($image->image)}}" alt="">
+</div>
+</div>
+
+@endforeach
+
+        </div>
     </div>
     </div>
     
