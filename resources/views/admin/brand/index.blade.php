@@ -1,9 +1,9 @@
-<x-app-layout>
-  <x-slot name="header">
-  <h2 class="text-xl font-semibold leading-tight text-gray-800 font">
-  All brands
-  </h2>
-  </x-slot>
+
+@extends('admin.admin_master')
+
+@section('admin')
+
+   
   <div class="py-12">
   <div class="container">
   <div class="row">
@@ -61,7 +61,11 @@
   @endforeach
   </tbody>
   </table>
-  {{ $brands->links()}}
+
+  <nav aria-label="Page navigation">
+    {{ $brands->links()}}
+  
+  </nav>
   
   </div>
   </div>
@@ -109,6 +113,4 @@
   </div>
   
   
-  
-  </x-app-layout>
-  
+@endsection

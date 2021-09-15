@@ -27,7 +27,8 @@ use Illuminate\Support\Facades\DB;
 
 
 Route::get('/', function () {
-    return view('home');
+    $brands=DB::table('brands')->get();
+    return view('home',compact('brands'));
 });
 
 
