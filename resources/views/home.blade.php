@@ -151,7 +151,7 @@
         <div class="row portfolio-container" data-aos="fade-up">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{asset('frontend/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/portfolio-1.jpg ')}}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>App</p>
