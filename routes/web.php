@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BrandController;
 use Illuminate\Support\Facades\Route;
+
+use Illuminate\Http\Request;
 use App\Http\Controllers\CategoryController;
 
 use App\Models\User;
@@ -18,6 +20,11 @@ use Illuminate\Support\Facades\DB;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -67,8 +74,6 @@ Route::post('/multi/add',[BrandController::class,'StoreImg'])->name('store.image
 
 
 
-    
-
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     // use ORM to query DB
@@ -79,4 +84,12 @@ $users=User::all();
 // pass user data into page;
     return view('dashboard', compact('users'));
 })->name('dashboard');
- 
+
+
+
+
+
+
+
+
+
