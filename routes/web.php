@@ -75,14 +75,16 @@ Route::post('/multi/add',[BrandController::class,'StoreImg'])->name('store.image
 
 
 
+
+
+
+
+
+
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    // use ORM to query DB
-    // Fetching all users from the user model using ORM;
-$users=User::all();
-    // Fetching all users from the user model using QUERY BUILDER;
-// $users= DB::table('users')->get();
-// pass user data into page;
-    return view('dashboard', compact('users'));
+    return view('admin.index');
 })->name('dashboard');
 
 

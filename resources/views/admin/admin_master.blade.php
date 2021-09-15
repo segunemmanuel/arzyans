@@ -17,9 +17,9 @@
   <link href=" {{ asset('backend/assets/plugins/nprogress/nprogress.css') }}" rel="stylesheet" />
   <link href="  {{ asset('backend/ assets/plugins/flag-icons/css/flag-icon.min.css') }}" rel="stylesheet"/>
   <link href="{{ asset('backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css') }} " rel="stylesheet" />
-  <link href="{{ asset('backend/assets/plugins/ladda/ladda.min.css') }} " rel="stylesheet" />
-  <link href="{{ asset('backend/assets/plugins/select2/css/select2.min.css') }} " rel="stylesheet" />
-  <link href="{{ asset('backend/assets/plugins/daterangepicker/daterangepicker.css') }} " rel="stylesheet" />
+  <link href="{{ asset('backend/assets/plugins/ladda/ladda.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset('backend/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
+  <link href="{{ asset('backend/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
 
   <!-- SLEEK CSS -->
   <link id="sleek-css" rel="stylesheet" href="{{ asset('backend/assets/css/sleek.css') }}" />
@@ -37,9 +37,11 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="assets/plugins/nprogress/nprogress.js"></script>
+  <script src=" 
+  {{asset('backend/assets/plugins/nprogress/nprogress.js')}} "></script>
 </head>
 
+{{-- {{asset('')}} --}}
 
   <body class="sidebar-fixed sidebar-dark header-light header-fixed" id="body">
     <script>
@@ -684,31 +686,31 @@
                       <li>
                         <a href="#">
                           <i class="mdi mdi-account-plus"></i> New user registered
-                          <span class="float-right  font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
+                          <span class="float-right font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i class="mdi mdi-account-remove"></i> User deleted
-                          <span class="float-right  font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 07 AM</span>
+                          <span class="float-right font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 07 AM</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i class="mdi mdi-chart-areaspline"></i> Sales report is ready
-                          <span class="float-right  font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 12 PM</span>
+                          <span class="float-right font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 12 PM</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i class="mdi mdi-account-supervisor"></i> New client
-                          <span class="float-right  font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
+                          <span class="float-right font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i class="mdi mdi-server-network-off"></i> Server overloaded
-                          <span class="float-right  font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 05 AM</span>
+                          <span class="float-right font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 05 AM</span>
                         </a>
                       </li>
                       <li class="dropdown-footer">
