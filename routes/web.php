@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\CategoryController;
-
+use App\Http\Controllers\HomeController;
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
@@ -71,8 +71,9 @@ Route::get('/brand/delete/{id}',[BrandController::class,'Delete']);
 Route::get('/multi/image',[BrandController::class,'Multi'])->name('multi.image');
 Route::post('/multi/add',[BrandController::class,'StoreImg'])->name('store.image');
 
-
-
+// Admin routes
+// Slider routes
+Route::get('/home/slider',[HomeController::class,'HomeSlider'])->name('home.slider');
 
 
 
