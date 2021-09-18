@@ -11,7 +11,7 @@
 
     <h2>Home slider</h2>
     <br>
-    <a href=""> <button class="btn btn-info">Add slider</button></a>
+    <a href="{{route('add.slider')}}"> <button class="btn btn-info">Add slider</button></a>
   <br>
 
 
