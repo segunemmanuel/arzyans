@@ -8,7 +8,8 @@
             <h2>Create slider</h2>
         </div>
         <div class="card-body">
-            <form>
+            <form method="POST" action="{{  route('store.slider')  }}" enctype="multipart/form-data">
+                @csrf
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Slider title</label>
                     <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter title">
@@ -19,7 +20,7 @@
                     <textarea class="form-control" name="description"id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">File input</label>
+                    <label for="exampleFormControlFile1">Slider image</label>
                     <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <div class="pt-4 pt-5 mt-4 form-footer border-top">

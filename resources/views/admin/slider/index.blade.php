@@ -43,12 +43,12 @@
   </tr> 
   </thead>
   <tbody>
-  
+  @php ($i=1)
   
   @foreach($sliders as $slider)
   <tr>
     <!-- To make the pagination align correctyly -->
-    <th scope ="row"> {{ $sliders->firstItem()+ $loop->index}}</th>
+    <th scope ="row"> {{ $i++}}</th>
   <td>{{ $slider->title }}</td>
   <td>{{$slider->desc}}</td>
   <td><img src="{{asset($slider->image)}}" width="90px" height="60px" alt=""></td>
