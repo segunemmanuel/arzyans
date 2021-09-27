@@ -34,11 +34,11 @@
   <table class="table">
   <thead>
   <tr>
-  <th scope="col">S/N</th>
-  <th scope="col">Slider Title</th>
-  <th scope="col">Slider desc</th>
-  <th scope="col">Slider Image</th>
-  <th scope="col">Action</th>
+  <th scope="col" width="5%">S/N</th>
+  <th scope="col" width="15%">Slider Title</th>
+  <th scope="col" width="35%">Slider desc</th>
+  <th scope="col" width="15%">Slider Image</th>
+  <th scope="col"width="15%">Action</th>
   
   </tr> 
   </thead>
@@ -53,8 +53,8 @@
   <td>{{$slider->desc}}</td>
   <td><img src="{{asset($slider->image)}}" width="90px" height="60px" alt=""></td>
 
-  <td><a href="{{url('brand/edit/'.$slider->id)}}" class="btn btn-info">Edit</a> 
-  <a href="{{url('brand/delete/'.$slider->id)}}" onclick="return confirm('Are you sure to delete')" class="btn btn-danger">Delete</a>
+  <td><a href="{{url('slider/edit/'.$slider->id)}}" class="btn btn-info">Edit</a> 
+  <a href="{{url('slider/delete/'.$slider->id)}}" onclick="return confirm('Are you sure to delete')" class="btn btn-danger">Delete</a>
   
   </td> 
    </tr>

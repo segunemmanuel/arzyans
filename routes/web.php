@@ -2,10 +2,10 @@
 
 use App\Http\Controllers\BrandController;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
@@ -79,6 +79,14 @@ Route::post('/multi/add',[BrandController::class,'StoreImg'])->name('store.image
 Route::get('/home/slider',[HomeController::class,'HomeSlider'])->name('home.slider');
 Route::get('/add/slider',[HomeController::class,'AddSlider'])->name('add.slider');
 Route::post('/store/slider',[HomeController::class,'StoreSlider'])->name('store.slider');
+Route::get('/slider/delete/{id}',[HomeController::class,'DelSlider']);
+Route::get('/slider/edit/{id}',[HomeController::class,'Edit']);
+Route::get('/slider/edit/{id}',[HomeController::class,'Edit']);
+
+
+// About  all routes
+Route::get('/home/about', [AboutController::class,'About'])->name('home.about')
+
 
 
 

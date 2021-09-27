@@ -46,7 +46,7 @@
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Update brand image </label>
           <input type="file" name="brand_image" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
-          value="{{ $brands->brand_image}}">
+          value="{{$brands->brand_image}}">
       @error('brand_image')
       <span class="text-danger"> {{$message}}</span>
       @enderror
