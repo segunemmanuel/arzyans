@@ -28,7 +28,8 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
     $brands=DB::table('brands')->get();
-    return view('home',compact('brands'));
+    $abouts=DB::table('abouts')->first();
+    return view('home',compact('brands','abouts'));
 });
 
 
@@ -85,7 +86,16 @@ Route::get('/slider/edit/{id}',[HomeController::class,'Edit']);
 
 
 // About  all routes
-Route::get('/home/about', [AboutController::class,'About'])->name('home.about')
+Route::get('/home/about', [AboutController::class,'About'])->name('home.about');
+Route::get('/add/about', [AboutController::class,'AddAbout'])->name('add.about');
+Route::post('/store/about', [AboutController::class,'StoreAbout'])->name('store.about');
+Route::get('/about/edit/{id}',[AboutController::class,'Edit']);
+Route::get('/about/delete/{id}',[AboutController::class,'Delete']);
+
+Route::post('/update/about/{id}', [AboutController::class,'UpdateAbout']);
+
+
+
 
 
 
